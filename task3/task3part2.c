@@ -3,6 +3,8 @@
 #include <math.h>
 
 
+/* JAMES: Good but what if array_length = 0?  */
+
 float find_mean(float* input, int array_length) 		//function to calc the mean
 { 
     int i=0;
@@ -25,6 +27,10 @@ float find_standard_deviation(float* input, int count)			//function to calc the 
 	float brac;
 	float root=0;
 	float deviation=0;
+
+/* JAMES: This is going to recalculate the mean for EVERY element of the standard deviation which means 
+the data will be looped through at least count*count times  */
+
 	for(i=0; i<count; ++i)					
 	{
 		brac += pow(input[i] - find_mean(input,count), 2);	 		//calculates the inside root sign
