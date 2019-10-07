@@ -40,9 +40,10 @@ void main(int argc, char** argv)
 				printf("\nResult buffer = %s\n",resultBuffer );
 
 				viWrite(scopeHandle,"CURV?\n",6,&resultCount);
-				viRead(scopeHandle,dataBuffer,250,&resultCount);
+				sleep(2);
+				status = viRead(scopeHandle,dataBuffer,2500,&resultCount);
 
-				for(int i = 0; i<128; i++)
+				for(int i = 0; i<2500; i++)
 				{
 					y = dataBuffer[i];
 					printf("\nRaw = %x,  Read = %d",y,y);
