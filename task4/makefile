@@ -1,0 +1,20 @@
+#this is a comment 
+
+#lists all athe objecct file
+OBJ = main.o statiscis.o
+
+TARGET = program
+
+
+
+#this compiles each c file into an object file 
+%.o: %.c
+	gcc -c -o $@ $<
+
+
+
+#this links the object into an executable 
+#-o means : "output file name"
+$(TARGET): $(OBJ)
+	gcc -o $@ $^
+

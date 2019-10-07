@@ -52,7 +52,7 @@ void main(int argc ,char** argv)
 		}
 	}
 
-	//printf("%d",i); 		//just to make sure the count is correct 
+	printf("%d",i); 		//just to make sure the count is correct 
 
 
 
@@ -68,6 +68,7 @@ void main(int argc ,char** argv)
 	}
 
 	fflush(stdout);
+	
 	float mean;
 	float std_dev;
 
@@ -82,3 +83,4 @@ void main(int argc ,char** argv)
 	
 	
 }
+
