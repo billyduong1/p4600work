@@ -1,11 +1,12 @@
 #this is a comment 
 
 #lists all athe objecct file
+
 OBJ = main.o statiscis.o
 
 TARGET = program
 
-
+#This make file will not compile your code because your files are in subdirectories
 
 #this compiles each c file into an object file 
 %.o: %.c
