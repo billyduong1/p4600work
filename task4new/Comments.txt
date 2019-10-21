@@ -1,0 +1,4 @@
+JAMES:
+
+So I'm guessing this never compiled? Your makefile is not going to find your source files or headers because it never says which directory they are stored in. 
+There are also multiple problems  in several of your source files - see comments in there.
