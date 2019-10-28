@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include "amplitude.h"
-#include "smoothcurve.h"
-
+#include "smooth_curve.h"
+#include "noisysinwave.h"
 
 
 

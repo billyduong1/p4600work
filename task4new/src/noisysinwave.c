@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
+#include "noisysinwave.h"
 
-int main()
+double noisysinwave(int size)
 {
 	FILE * input_file; //makes it into a file 
 
@@ -11,7 +12,7 @@ int main()
     float y=0;
     int i =0;
 
-	input_file = fopen("noisysinwave","w");	//names the file "noisysinwave"
+	input_file = fopen("noisysinwave.dat","w");	//names the file "noisysinwave"
 
 
 	srand(time(NULL));		//gives me random numbers based on system time 
